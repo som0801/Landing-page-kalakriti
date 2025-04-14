@@ -16,16 +16,34 @@
         <a href="#about">About</a>
         <a href="#team">Team</a>
         <a href="#artisans">For Artisans</a>
-        <a href="#contact">Contact</a>
+        <a href="#launching-soon">Launching Soon</a>
+        <a href="#footer">Contact</a>
+      </div>
+      <div class="mobile-nav-toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </nav>
+  
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#artisans">For Artisans</a>
+      <a href="#products">Products</a>
+      <a href="#footer">Contact</a>
+    </div>
+  </div>
 
-  <header>
+  <header id="hero-container">
+    <!-- The 3D animation will be rendered here by kalakriti-hero-section.js -->
     <div class="container hero">
-      
       <div class="hero-content">
-        
         <h1>Empowering<br>Indian <span style="color: var(--primary-color)">Artisans</span><br>with AI</h1>
         <p>KalaKriti is an AI-powered mobile platform helping traditional artisans market their handicrafts through video enhancement, multilingual translation, and social media integration.</p>
         
@@ -173,7 +191,44 @@
     </div>
   </section>
 
-  <footer class="footer">
+    <section id="launching-soon" class="launching-soon">
+        <div class="container">
+            <div class="section-title">
+                <h2>Coming <span>Soon</span></h2>
+            </div>
+            <div class="launch-content">
+                <div class="launch-message">
+                    <h3>The Future of Indian Handicrafts</h3>
+                    <p>We're crafting a revolutionary platform that will transform how artisans showcase their masterpieces to the world.</p>
+                    <div class="launch-features">
+                        <div class="feature">
+                            <span class="feature-icon">🎨</span>
+                            <p>AI-Enhanced Product Showcases</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌏</span>
+                            <p>Global Market Access</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💫</span>
+                            <p>Smart Marketing Tools</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notify-box">
+                    <h3>Be the First to Know</h3>
+                    <p>Join our waitlist to receive exclusive early access and special offers.</p>
+                    <form class="notify-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
@@ -181,14 +236,9 @@
           <p>Empowering Indian artisans with AI-powered marketing tools designed specifically for traditional handicrafts.</p>
           <div class="contact-info">
             <p>infoonkalakriti@gmail.com</p>
-            <p>+91 9845118993/p>
+            <p>+91 9845118993</p>
           </div>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook">📱</a>
-            <a href="#" aria-label="Twitter">📱</a>
-            <a href="#" aria-label="Instagram">📱</a>
-            <a href="#" aria-label="LinkedIn">📱</a>
-          </div>
+        
         </div>
         <div class="footer-section">
           <h3>Features</h3>
@@ -216,6 +266,10 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="kalakriti-hero-section.js"></script>
+  <script src="mobile-menu-js.js"></script>
+  <script src="product-showcase-js.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
